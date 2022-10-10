@@ -15,8 +15,8 @@ def getPrecdict(request):
     data = request.data
     print(data)
     message = data['message']
-    output = get_response(message)
-    sa = get_sa(message)
+    output = get_response(data)
+    sa = get_sa(data)
     result = output+","+str(sa)
     print(result)
     return Response(result)
