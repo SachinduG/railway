@@ -16,9 +16,10 @@ def getPredict(request):
     print(dataList[1])
     msg = dataList[1]
     print(msg)
-
-    message = msg['message']
-
+    if 'message' in msg:
+        message = msg['message']
+    else:
+        message = "Hi1"
     #message = request.data.get('message')
     output = get_response(message)
     sa = get_sa(message)
