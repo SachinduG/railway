@@ -17,6 +17,7 @@ def getPredict(request):
     output = get_response(message)
     sa = get_sa(message)
     result = output+" | Sentiment Value is "+str(sa)
+    print(result)
     return Response(result)
 
     #data = request.data
