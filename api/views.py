@@ -13,7 +13,7 @@ def getChat():
 def getPredict(request):
     data = request.data
     tata = list(data.values())
-    print(tata[1])
+    print(tata[1].values())
     if 'message' in request.data:
         message = request.data['message']
     else:
