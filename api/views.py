@@ -18,6 +18,8 @@ def getPredict(request):
     print(msg)
     message = msg.split(":")
     print(message)
+    message1 = message[1]
+    print(message1)
     output = get_response(message)
     sa = get_sa(message)
     result = output+" | Sentiment Value is "+str(sa)
