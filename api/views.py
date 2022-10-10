@@ -16,11 +16,17 @@ def getPredict(request):
     print(dataList[1])
     msg = dataList[1]
     print(msg)
-    message = msg['message']
+    message = msg.values()
     output = get_response(message)
     sa = get_sa(message)
     result = output+" | Sentiment Value is "+str(sa)
     return Response(result)
 
+    #data = request.data
+    #message = data['message']
+    #output = get_response(message)
+    #sa = get_sa(message)
+    #result = output + "," + str(sa)
+    #return Response(result)
 
 
