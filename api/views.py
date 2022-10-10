@@ -14,12 +14,7 @@ def getPredict(request):
     data = request.data
     dataList = list(data.values())
     print(dataList[1])
-    msg = dataList[1]
-    print(msg)
-    message = msg.split(":")
-    print(message)
-    message1 = message[1]
-    print(message1)
+    message = dataList[1]
     output = get_response(message)
     sa = get_sa(message)
     result = output+" | Sentiment Value is "+str(sa)
