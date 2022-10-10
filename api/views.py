@@ -11,16 +11,16 @@ def getChat():
 
 @api_view(['POST'])
 def getPredict(request):
-    input = request.data
-    print(input.dict())
+    data = request.data
+    print(list(data.dict()))
     if 'message' in request.data:
         message = request.data['message']
     else:
         message = "Hi1"
-    #message = request.data.get('message', data)
+    #message = request.data.get('message')
     output = get_response(message)
     sa = get_sa(message)
-    result = output+", "+str(sa)
+    result = output+" | Sentiment Value is "+str(sa)
     return Response(result)
 
 
