@@ -12,7 +12,8 @@ def getChat():
 @api_view(['POST'])
 def getPredict(request):
     data = request.data
-    print(list(data.values()))
+    tata = list(data.values())
+    print(tata[1])
     if 'message' in request.data:
         message = request.data['message']
     else:
