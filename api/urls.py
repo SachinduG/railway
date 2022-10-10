@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('chat/', views.getChat),
-    path('predict/', views.getPrecdict),
+    path('predict/', views.getPredict),
 
 ]
