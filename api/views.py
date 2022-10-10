@@ -13,7 +13,11 @@ def getChat():
 def getPredict(request):
     data = request.data
     print(data)
-    message = request.data.get('message', data)
+    if 'message' in request.POST:
+        message = request.POST['message']
+    else:
+        message = "Hi"
+    #message = request.data.get('message', data)
     output = get_response(message)
     sa = get_sa(message)
     result = output+", "+str(sa)
