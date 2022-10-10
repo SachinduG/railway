@@ -17,7 +17,7 @@ def getPredict(request):
     if 'message' in request.data:
         message = request.data['message']
     else:
-        message = "Hi"
+        message = "Hi1"
     #message = request.data.get('message', data)
     print(message)
     output = get_response(message)
