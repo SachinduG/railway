@@ -12,10 +12,11 @@ def getChat():
 @api_view(['POST'])
 def getPredict(request):
     data = request.data
+    print(data.values())
     if 'message' in request.data:
         message = request.data['message']
     else:
-        message = "Hi"
+        message = "Hi1"
     #message = request.data.get('message', data)
     output = get_response(message)
     sa = get_sa(message)
