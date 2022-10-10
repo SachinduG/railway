@@ -13,7 +13,6 @@ def getChat():
 def getPredict(request):
     data = request.data
     dataList = list(data.values())
-    print(dataList[1])
     message = dataList[1]
     output = get_response(message)
     sa = get_sa(message)
