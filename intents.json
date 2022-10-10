@@ -1,0 +1,526 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "Hey", "Is anyone there?", "Good day"],
+      "bot_response": [
+        "Hey there!",
+        "Hey",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there! how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "bot_response": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye Come back again soon."
+      ],
+      "required_words": ["Bye"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot"],
+      "bot_response": [
+        "The pleasure is all mine!",
+        "Happy to help!",
+        "You are welcome",
+        "Any time!"
+      ],
+      "required_words": ["Thank"]
+    },
+    {
+      "tag": "diseases",
+      "patterns": [
+        "What are the common dog skin diseases?",
+        "What are the skin diseases in dogs?",
+        "What are the most prevalent skin illnesses in dogs?",
+        "What are some of the most common skin problems in dogs?",
+        "What are the most common skin problems in dogs?"
+      ],
+      "bot_response": [
+        "Ringworm, Acral Lick Dermatitis, Mange",
+        "Dandruff, Lupus, Canine Atopic Dermatitis",
+        "Folliculitis, Impetigo, Yeast Infections, Ticks and Fleas"
+      ]
+    },
+    {
+      "tag": "symptoms1",
+      "patterns": [
+        "What are the symptoms of Ringworm?",
+        "Ringworm symptoms include ?",
+        "How do I know if my dog ​​has Ringworm?",
+        "Symptoms for Ringworm?"
+      ],
+      "bot_response": [
+        "Circular areas of hair loss, often with a red and crusty edge",
+        "Broken hair and a poor hair coat, Dry, scaly skin or areas of excessive dandruff",
+        "Inflamed areas of skin, Darkened patches of skin",
+        "Itchiness, scratching, or excessive grooming",
+        "Inflamed nail beds or darkened or dry nails, Dry, brittle, or misshapen nails"
+      ]
+    },
+    {
+      "tag": "precautions1",
+      "patterns": [
+        "What are the precautions for Ringworm?",
+        "What are the Ringworm precautions?",
+        "What are some Ringworm preventative measures?",
+        "How can I prevent my dog ​​from Ringworm?",
+        "How can I keep my dog from getting Ringworm?",
+        "Precautions for Ringworm?"
+      ],
+      "bot_response": [
+        "Fully cleanse the environment of the home and any tools and bedding that the animals regularly, Follow the instructions of your veterinarian"
+      ]
+    },
+    {
+      "tag": "causes1",
+      "patterns": [
+        "What causes Ringworm in my dog?",
+        "What causes my dog's Ringworm?",
+        "Why does my dog get Ringworm?",
+        "In my dog, what causes Ringworm?",
+        "How is my dog ​​affected by Ringworm?",
+        "How does Ringworm affect my dog?",
+        "Causes for Ringworm?"
+      ],
+      "bot_response": [
+        "Direct contact with an infected animal, Through contaminated objects such as brushes, dog beds, and toys, as well as surfaces that are difficult to clean, like rugs, wool, and wood, Some types of ringworm fungi live in the soil, weaker immune systems"
+      ]
+    },
+    {
+      "tag": "symptoms2",
+      "patterns": [
+        "What are the symptoms of Dandruff?",
+        "Dandruff symptoms include ?",
+        "How do I know if my dog ​​has Dandruff?",
+        "Symptoms for Dandruff?"
+      ],
+      "bot_response": [
+        "Itchiness, An odor to the skin, Excessive amounts of dandruff",
+        "Hair loss, Red, irritated skin, Other signs of illness or discomfort"
+      ]
+    },
+    {
+      "tag": "precautions2",
+      "patterns": [
+        "What are the precautions for Dandruff?",
+        "What are the Dandruff precautions?",
+        "What are some Dandruff preventative measures?",
+        "How could I prevent my dog ​​from Dandruff?",
+        "How could I keep my dog from getting Dandruff?",
+        "Precautions for Dandruff?"
+      ],
+      "bot_response": [
+        "Regular grooming, Bathing, Supplements, Healthy Diet, Humidifier Usage"
+      ]
+    },
+    {
+      "tag": "causes2",
+      "patterns": [
+        "What causes Dandruff in my dog?",
+        "What causes my dog's Dandruff?",
+        "Why does my dog get Dandruff",
+        "In my dog, what causes Dandruff?",
+        "How is my dog ​​affected by Dandruff?",
+        "How does Dandruff affect my dog?",
+        "Causes for Dandruff?"
+      ],
+      "bot_response": [
+        "Dry Air, Walking Dandruff and Other Parasites, Obesity and Nutritional Issues",
+        "Skin Infections, Allergies, Hormonal Conditions, Idiopathic Seborrhea"
+      ]
+    },
+    {
+      "tag": "symptoms3",
+      "patterns": [
+        "What are the symptoms of Impetigo?",
+        "Impetigo symptoms include ?",
+        "How do I know if my dog ​​has Impetigo?",
+        "Symptoms for Impetigo?"
+      ],
+      "bot_response": [
+        "Pustules (small, pus-filled bumps), Papules (small, red, raised bumps)",
+        "Epidermal collarettes (circular lesions with crusting around the edges), Cratching the affected areas of the skin"
+      ]
+    },
+    {
+      "tag": "precautions3",
+      "patterns": [
+        "What are the precautions for Impetigo?",
+        "What are the Impetigo precautions?",
+        "What are some Impetigo preventative measures?",
+        "How can I prevent my dog ​​from Impetigo?",
+        "How can I keep my dog from getting Impetigo?",
+        "Precautions for Impetigo?"
+      ],
+      "bot_response": [
+        "Clean environment free of any fleas, urine, or fecal material",
+        "Clean their bedding and toys frequently",
+        "Keeping them up-to-date on their flea prevention"
+      ]
+    },
+    {
+      "tag": "causes3",
+      "patterns": [
+        "What causes Impetigo in my dog?",
+        "What causes my dog's Impetigo?",
+        "Why does my dog get Impetigo?",
+        "In my dog, what causes Impetigo?",
+        "How is my dog ​​affected by Impetigo?",
+        "How does Impetigo affect my dog?",
+        "Causes for Impetigo?"
+      ],
+      "bot_response": [
+        "An overgrowth of Staphylococcus bacteria, Unhygienic areas, Fleas, Urine scalding"
+      ]
+    },
+    {
+      "tag": "symptoms4",
+      "patterns": [
+        "What are the symptoms of Yeast Infections?",
+        "Yeast Infections symptoms include ?",
+        "How do I know if my dog ​​has Yeast Infections?",
+        "Symptoms for Yeast Infections?"
+      ],
+      "bot_response": [
+        "Changes in skin color and texture, Greasy skin, Scaly skin",
+        "Head shaking and tilting, Scratching and rubbing, Licking",
+        "Swelling and warmth, Odor, Hair loss, Drooling"
+      ]
+    },
+    {
+      "tag": "precautions4",
+      "patterns": [
+        "What are the precautions for Yeast Infections?",
+        "What are the Yeast Infections precautions?",
+        "What are some Yeast Infections preventative measures?",
+        "How can I prevent my dog ​​from Yeast Infections?",
+        "How can I keep my dog from getting Yeast Infections?",
+        "Precautions for Yeast Infections?"
+      ],
+      "bot_response": [
+        "Keep the dog indoors during extreme heat and humidity",
+        "Feed a good quality food and be aware of any food allergies",
+        "Keep the ears clean and healthy with regular checks",
+        "Ensure your dog is completely dry, including paws and ears after a bath or swim",
+        "If your dog has hair at the opening of his ears, have your groomer trim or tweeze it",
+        "Use flea and tick preventatives as directed by your veterinarian."
+      ]
+    },
+    {
+      "tag": "causes4",
+      "patterns": [
+        "What causes Yeast Infections in my dog?",
+        "What causes my dog's Yeast Infections?",
+        "Why does my dog get Yeast Infections?",
+        "In my dog, what causes Yeast Infections?",
+        "How is my dog ​​affected by Yeast Infections?",
+        "How does Yeast Infections affect my dog?",
+        "Causes for Yeast Infections?"
+      ],
+      "bot_response": [
+        "Overactive immune system, Underactive immune system, They’re high in sugar and carbs",
+        "Temperature and humidity are high, Dog’s ear include wax or discharge",
+        "A trapped foreign object inside the ear, Poor hygiene"
+      ]
+    },
+    {
+      "tag": "symptoms5",
+      "patterns": [
+        "What are the symptoms of Ticks and Fleas?",
+        "Ticks and Fleas symptoms include ?",
+        "How do I know if my dog ​​has Ticks and Fleas?",
+        "Symptoms for Ticks and Fleas?"
+      ],
+      "bot_response": [
+        "Scratching, biting, or chewing skin,Losing hair, especially around the neck and tail",
+        "Tiny red bumps on skin, Small black specks on skin or bedding, Develops a fever, becomes lethargic, or loses appetite"
+      ]
+    },
+    {
+      "tag": "precautions5",
+      "patterns": [
+        "What are the precautions for Ticks and Fleas?",
+        "What are the Ticks and Fleas precautions?",
+        "What are some Ticks and Fleas preventative measures?",
+        "How can I prevent my dog ​​from Ticks and Fleas?",
+        "How can I keep my dog from getting Ticks and Fleas?",
+        "Precautions for Ticks and Fleas?"
+      ],
+      "bot_response": [
+        "Keep the lawn manicured, Check the dog regularly for signs of parasite activity",
+        "Put the dog on a year-round flea-and-tick prevention program, Schedule regular checkups"
+      ]
+    },
+    {
+      "tag": "causes5",
+      "patterns": [
+        "What causes Ticks and Fleas in my dog?",
+        "What causes my dog's Ticks and Fleas?",
+        "Why does my dog get Ticks and Fleas?",
+        "In my dog, what causes Ticks and Fleas?",
+        "How is my dog ​​affected by Ticks and Fleas?",
+        "How does Ticks and Fleas affect my dog?",
+        "Causes for Ticks and Fleas?"
+      ],
+      "bot_response": [
+        "They’re out in that environment, walking through the woods or high grass, They crawl up on these low shrubs or grass"
+      ]
+    },
+    {
+      "tag": "symptoms6",
+      "patterns": [
+        "What are the symptoms of Mange?",
+        "Mange symptoms include ?",
+        "How do I know if my dog ​​has Mange?",
+        "Symptoms for Mange?"
+      ],
+      "bot_response": [
+        "Redness, rash, and itching, Hair loss",
+        "Sores and lesions, Scabby, crusty or scaly skin"
+      ]
+    },
+    {
+      "tag": "precautions6",
+      "patterns": [
+        "What are the precautions for Mange?",
+        "What are the Mange precautions?",
+        "What are some Mange preventative measures?",
+        "How can I prevent my dog ​​from Mange?",
+        "How can I keep my dog from getting Mange?",
+        "Precautions for Mange?"
+      ],
+      "bot_response": [
+        "Keep pets away from any other animals suspected to have mange, including avoiding public dog parks or similar areas that may foster contagious outbreaks",
+        "If a pet has had demodectic mange, do not breed the animal, as this type of mange is suspected to be hereditary",
+        "Practice good grooming, including regular brushing and baths as needed to keep any skin pests under control"
+      ]
+    },
+    {
+      "tag": "causes6",
+      "patterns": [
+        "What causes Mange in my dog?",
+        "What causes my dog's Mange?",
+        "Why does my dog get Mange?",
+        "In my dog, what causes Mange?",
+        "How is my dog ​​affected by Mange?",
+        "How does Mange affect my dog?",
+        "Causes for Mange?"
+      ],
+      "bot_response": [
+        "Sarcoptic mite, Sarcoptes scabiei, or a closely related mite species like Notoedres",
+        "From another animal or from contaminated bedding"
+      ]
+    },
+    {
+      "tag": "symptoms7",
+      "patterns": [
+        "What are the symptoms of Lupus?",
+        "Lupus symptoms include ?",
+        "How do I know if my dog ​​has Lupus?",
+        "Symptoms for Lupus?"
+      ],
+      "bot_response": [
+        "Pale skin on the bridge of the nose",
+        "Redness of the skin, especially on the nose, lips, and face, Scaly, flaky, or crusty skin, Sores or ulcers, Scarring",
+        "Pain at the affected sites, Itchiness or scratching, Bacterial infections"
+      ]
+    },
+    {
+      "tag": "precautions7",
+      "patterns": [
+        "What are the precautions for Lupus?",
+        "What are the Lupus precautions?",
+        "What are some Lupus preventative measures?",
+        "How can I prevent my dog ​​from Lupus?",
+        "How can I keep my dog from getting Lupus?",
+        "Precautions for Lupus?"
+      ],
+      "bot_response": ["Regular veterinary visits and Healthy lifestyle"]
+    },
+    {
+      "tag": "causes7",
+      "patterns": [
+        "What causes Lupus in my dog?",
+        "What causes my dog's Lupus?",
+        "Why does my dog get Lupus?",
+        "In my dog, what causes Lupus?",
+        "How is my dog ​​affected by Lupus?",
+        "How does Lupus affect my dog?",
+        "Causes for Lupus?"
+      ],
+      "bot_response": [
+        "Genetic factors, Immunologic disorders",
+        "Stress and Environmental factors(ultraviolet light and cigarette smoke trigger or worsen Discoid lupus erythematosus)"
+      ]
+    },
+    {
+      "tag": "symptoms8",
+      "patterns": [
+        "What are the symptoms of Folliculitis?",
+        "Folliculitis symptoms include ?",
+        "How do I know if my dog ​​has Folliculitis?",
+        "Symptoms for Folliculitis?"
+      ],
+      "bot_response": [
+        "Swelling, redness, itching, pustules (pimples) and Hair loss",
+        "Papules (reddish swellings on the skin), Hyperpigmentation (darkening of the skin)",
+        "Epidermal collarettes (circular areas of hair loss with crusting or scaling around their borders)"
+      ]
+    },
+    {
+      "tag": "precautions8",
+      "patterns": [
+        "What are the precautions for Folliculitis?",
+        "What are the Folliculitis precautions?",
+        "What are some Folliculitis preventative measures?",
+        "How can I prevent my dog ​​from Folliculitis?",
+        "How can I keep my dog from getting Folliculitis?",
+        "Precautions for Folliculitis?"
+      ],
+      "bot_response": [
+        "Keep the dog on year-round quality flea-prevention medication",
+        "Ensure the dog has healthy skin  anad fur by maintaining a strong relationship with the veterinarian"
+      ]
+    },
+    {
+      "tag": "causes8",
+      "patterns": [
+        "What causes Folliculitis in my dog?",
+        "What causes my dog's Folliculitis?",
+        "Why does my dog get Folliculitis?",
+        "In my dog, what causes Folliculitis?",
+        "How is my dog ​​affected by Folliculitis?",
+        "How does Folliculitis affect my dog?",
+        "Causes for Folliculitis?"
+      ],
+      "bot_response": [
+        "Bacteria, Parasitism, Fungal infections, Systemic disease",
+        "Immune system disorders, Endocrine issues, and Local trauma"
+      ]
+    },
+    {
+      "tag": "symptoms9",
+      "patterns": [
+        "What are the symptoms of Acral Lick Dermatitis?",
+        "Acral Lick Dermatitis symptoms include ?",
+        "How do I know if my dog ​​has Acral Lick Dermatitis?",
+        "Symptoms for Acral Lick Dermatitis?"
+      ],
+      "bot_response": [
+        "Obsessive licking, Alopecia, Thickened skin",
+        "Secondary bacterial or fungal infections, Ruptured hair follicles"
+      ]
+    },
+    {
+      "tag": "precautions9",
+      "patterns": [
+        "What are the precautions for Acral Lick Dermatitis?",
+        "What are the Acral Lick Dermatitis precautions?",
+        "What are some Acral Lick Dermatitis preventative measures?",
+        "How can I prevent my dog ​​from Acral Lick Dermatitis?",
+        "How can I keep my dog from getting Acral Lick Dermatitis?",
+        "Precautions for Acral Lick Dermatitis?"
+      ],
+      "bot_response": [
+        "Clean the surroundings to get rid of any fungal or bacterial infestation that could worsen the condition",
+        "Keep the dog active also prevents the onset of other physical complications while keeping them happy"
+      ]
+    },
+    {
+      "tag": "causes9",
+      "patterns": [
+        "What causes Acral Lick Dermatitis in my dog?",
+        "What causes my dog's Acral Lick Dermatitis?",
+        "Why does my dog get Acral Lick Dermatitis?",
+        "In my dog, what causes Acral Lick Dermatitis?",
+        "How is my dog ​​affected by Acral Lick Dermatitis?",
+        "How does Acral Lick Dermatitis affect my dog?",
+        "Causes for Acral Lick Dermatitis?"
+      ],
+      "bot_response": ["Psychological factors, Allergies, Pain"]
+    },
+    {
+      "tag": "symptoms10",
+      "patterns": [
+        "What are the symptoms of Canine Atopic Dermatitis?",
+        "Canine Atopic Dermatitis symptoms include ?",
+        "How do I know if my dog ​​has Canine Atopic Dermatitis?",
+        "Symptoms for Canine Atopic Dermatitis?"
+      ],
+      "bot_response": [
+        "Itching, Scratching, Rubbing, Licking, A yeasty smell, Greasy skin, Redness or tough skin"
+      ]
+    },
+    {
+      "tag": "precautions10",
+      "patterns": [
+        "What are the precautions for Canine Atopic Dermatitis?",
+        "What are the Canine Atopic Dermatitis precautions?",
+        "What are some Canine Atopic Dermatitis preventative measures?",
+        "How can I prevent my dog ​​from Canine Atopic Dermatitis?",
+        "How can I keep my dog from getting Canine Atopic Dermatitis?",
+        "Precautions for Canine Atopic Dermatitis?"
+      ],
+      "bot_response": [
+        "Keeping the air fresh will minimize the risk of an allergic reaction"
+      ]
+    },
+    {
+      "tag": "causes10",
+      "patterns": [
+        "What causes Canine Atopic Dermatitis in my dog?",
+        "What causes my dog's Canine Atopic Dermatitis?",
+        "Why does my dog get Canine Atopic Dermatitis?",
+        "In my dog, what causes Canine Atopic Dermatitis?",
+        "How is my dog ​​affected by Canine Atopic Dermatitis?",
+        "How does Canine Atopic Dermatitis affect my dog?",
+        "Causes for Atopic Dermatitis?"
+      ],
+      "bot_response": [
+        "Flea allergy, Food allergy, Inhalant or contact allergy",
+        "Allergy to the normal bacterial flora and Yeast organisms of the skin"
+      ]
+    },
+    {
+      "tag": "identify1",
+      "patterns": [
+        "Itchiness"
+      ],
+      "bot_response": ["May be Ringworm or Dandruff or Lupus or Canine Atopic Dermatitis or Mange or Folliculitis"]
+    },
+    {
+      "tag": "identify2",
+      "patterns": [
+        "Hair loss"
+      ],
+      "bot_response": ["May be Ringworm or Dandruff or Yeast Infections or Mange or Folliculitis"]
+    },
+    {
+      "tag": "identify3",
+      "patterns": [
+        "Scratching"
+      ],
+      "bot_response": ["May be Ringworm or Ticks and Fleas or Yeast Infections or Lupus or Canine Atopic Dermatitis"]
+    },
+    {
+      "tag": "identify4",
+      "patterns": [
+        "Redness"
+      ],
+      "bot_response": ["May be Canine Atopic Dermatitis or Mange or Folliculitis or Lupus or Canine Atopic Dermatitis"]
+    },
+    {
+      "tag": "identify5",
+      "patterns": [
+        "Papules"
+      ],
+      "bot_response": ["May be Impetigo or Folliculitis"]
+    }
+  ]
+}
