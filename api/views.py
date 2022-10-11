@@ -9,21 +9,22 @@ def getChat():
     return Response("Welcome to Canis care Vet bot!")
 
 
+
 @api_view(['POST'])
 def getPredict(request):
+    #data = request.data
+    #dataList = list(data.values())
+    #message = dataList[1]
+    #output = get_response(message)
+    #sa = get_sa(message)
+    #result = output+" | Sentiment Value is "+str(sa)
+    #return Response(result)
+
     data = request.data
-    dataList = list(data.values())
-    message = dataList[1]
+    message = data['message']
     output = get_response(message)
     sa = get_sa(message)
     result = output+" | Sentiment Value is "+str(sa)
     return Response(result)
-
-    #data = request.data
-    #message = data['message']
-    #output = get_response(message)
-    #sa = get_sa(message)
-    #result = output + "," + str(sa)
-    #return Response(result)
 
 
